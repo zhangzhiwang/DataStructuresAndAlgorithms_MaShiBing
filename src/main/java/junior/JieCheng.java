@@ -15,7 +15,7 @@ package junior;
 public class JieCheng {
 	public static void main(String[] args) {
 		int n = 5;// 1!+2!+3!+……+5! = 1 + 2 + 6 + 24 + 120
-		int tmp = 1;
+		int tmp = 1;// 保存n-1的阶乘
 		int sum = 0;
 		for (int i = 1; i <= n; i++) {
 			tmp *= i;

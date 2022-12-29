@@ -32,7 +32,7 @@ public class InsertionSort {
 		//			System.out.println(num++);
 		//		}
 		
-		Map map = new HashMap<>();
+//		Map map = new HashMap<>();
 
 	}
 

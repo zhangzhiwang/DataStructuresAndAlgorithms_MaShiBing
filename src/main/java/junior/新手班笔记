@@ -29,3 +29,7 @@ class Node {
     Node nect;// 保存下一个节点的引用
     Node last;// 保存上一个节点的引用
 }
+2、队列
+FIFO，Fist In First Out
+3、栈
+FILO，Fist In Last Out

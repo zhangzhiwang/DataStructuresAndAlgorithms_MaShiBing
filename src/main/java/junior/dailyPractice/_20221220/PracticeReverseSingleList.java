@@ -21,9 +21,36 @@ public class PracticeReverseSingleList {
         System.out.print("\t" + n1.next.next.next.value);
         System.out.print("\t" + n1.next.next.next.next.value);
         System.out.println();
+        System.out.println("===================");
+
+        SingleNode<Integer> newHead = reverseSingleList(n1);
+        printSingleList(newHead);
     }
 
+    private static SingleNode reverseSingleList(SingleNode head) {
+        if(head == null || head.next == null) {
+            return head;
+        }
 
+        SingleNode pre = null;
+        SingleNode next = null;
+        while(head != null) {
+            next = head.next;
+            head.next = pre;
+            pre = head;
+            head = next;
+        }
+
+        return pre;
+    }
+
+    public static <T> void printSingleList(SingleNode<T> head) {
+        while(head != null) {
+            System.out.print(head.value + (head.next == null ? "" : " -> "));
+            head = head.next;
+        }
+        System.out.println();
+    }
 }
 
 /**

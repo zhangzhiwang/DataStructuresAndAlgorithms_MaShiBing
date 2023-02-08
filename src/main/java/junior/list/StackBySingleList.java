@@ -5,7 +5,10 @@ import lombok.RequiredArgsConstructor;
 
 /**
  * 用单链表实现栈
- * 
+ *
+ * 关键点：
+ * 栈的类里面只要有一个head链表节点即可
+ *
  * @author zhangzhiwang
  * @date 2022年1月20日 下午9:47:17
  */

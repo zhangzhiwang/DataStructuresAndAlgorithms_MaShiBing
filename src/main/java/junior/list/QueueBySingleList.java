@@ -6,6 +6,9 @@ import lombok.RequiredArgsConstructor;
 
 /**
  * 使用单链表构造队列
+ *
+ * 关键点：
+ * 队列的类里面要有head和tail两个链表节点
  * 
  * @author zhangzhiwang
  * @date 2022年1月20日 下午8:11:48

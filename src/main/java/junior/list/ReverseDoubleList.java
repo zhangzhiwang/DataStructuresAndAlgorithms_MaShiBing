@@ -7,7 +7,13 @@ import lombok.RequiredArgsConstructor;
 
 /**
  * 反转双向链表
- * 
+ *
+ * 思路：
+ * 关键点：
+ * 1、构造一个单链表
+ * 2、记录pre，head（也就是当前节点），next
+ * 3、返回翻转后的头节点
+ *
  * @author zhangzhiwang
  * @date 2022年1月20日 下午5:48:36
  */

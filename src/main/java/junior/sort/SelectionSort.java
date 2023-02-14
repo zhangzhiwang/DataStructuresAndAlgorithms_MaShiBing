@@ -21,10 +21,10 @@ package junior.sort;
 public class SelectionSort {
 	public static void main(String[] args) {
 		int[] arr = { 1, 3, 5, 2, 7, 4, 8, 100, 9, 10, -888 };// 准备一个无序数组
-		SortCommon.printArr(arr);
+		SortCommonUtil.printArr(arr);
 		
 		// 边界检查
-		if(!SortCommon.isArrNeedSort(arr)) {
+		if(!SortCommonUtil.isArrNeedSort(arr)) {
 			return;
 		}
 		
@@ -35,9 +35,9 @@ public class SelectionSort {
 			}
 			
 			// 将最小值放到该范围的第一个位置
-			SortCommon.changeValue(arr, i, minValueIndex);
+			SortCommonUtil.changeValue(arr, i, minValueIndex);
 		}
 		
-		SortCommon.printArr(arr);
+		SortCommonUtil.printArr(arr);
 	}
 }

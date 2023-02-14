@@ -14,16 +14,16 @@ package junior.sort;
 public class BubbleSort {
 	public static void main(String[] args) {
 		int[] arr = { 1, 3, 5, 2, 7, 4, 8, 100, 9, 10, -888, 8 };// 准备一个无序数组
-		SortCommon.printArr(arr);
+		SortCommonUtil.printArr(arr);
 
 		for (int i = arr.length - 1; i >= 0; i--) {// 第一次的范围是[0,N-1]，第二次的范围是[0,N-2]，第三次的范围是[0,N-3]，都是从0开始，所以后面是递减的，所以倒序遍历
 			for (int second = 1; second <= i; second++) {// 因为是两两比较，那么second代表每组后面的元素索引
 				if (arr[second - 1] > arr[second]) {
-					SortCommon.changeValue(arr, second - 1, second);
+					SortCommonUtil.changeValue(arr, second - 1, second);
 				}
 			}
 		}
 
-		SortCommon.printArr(arr);
+		SortCommonUtil.printArr(arr);
 	}
 }

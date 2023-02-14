@@ -14,7 +14,7 @@ package junior.sort;
 public class InsertSort {
 	public static void main(String[] args) {
 		int[] arr = { 1, 3, 5, 2, 7, 4, 8, 100, 9, 10, -888, 8 };// 准备一个无序数组
-		SortCommon.printArr(arr);
+		SortCommonUtil.printArr(arr);
 		
 		for(int newDataIndex = 1; newDataIndex < arr.length; newDataIndex++) {// newDataIndex是新插入数据的索引，默认新插入的数据放在已排好序数组的末尾，由于最开始已排好序数组的索引范围是[0,0]，所以新元素的第一个位置应该是1。
 			// 外层循环从1开始，因为0位置天生已经排好序了，所以新插入一个元素是从位置1开始的    想的屏放都发过几个唯一因为回家看看渝欧就1123
@@ -26,9 +26,9 @@ public class InsertSort {
 			 * 3、如果newDataIndex比妻哪一个位置小那么会进行位置交换，相当于newDataIndex向前移动了一个位置，那么preDataIndex也要往前移动一个位置以便下次循环比较，所以每次循环之后preDataIndex要减1。
 			 */
 			for(int preDataIndex = newDataIndex - 1; preDataIndex >= 0 && arr[preDataIndex] > arr[preDataIndex + 1]; preDataIndex--) {
-				SortCommon.changeValue(arr, preDataIndex, preDataIndex + 1);
+				SortCommonUtil.changeValue(arr, preDataIndex, preDataIndex + 1);
 			}
 		}
-		SortCommon.printArr(arr);
+		SortCommonUtil.printArr(arr);
 	}
 }

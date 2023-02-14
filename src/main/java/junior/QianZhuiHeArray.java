@@ -1,6 +1,6 @@
 package junior;
 
-import junior.sort.SortCommon;
+import junior.sort.SortCommonUtil;
 
 /**
  * 前缀和数组——用于计算数组某一个区间范围的和，sum[arr,L,R]，计算索引范围在L和R之间的和
@@ -16,7 +16,7 @@ import junior.sort.SortCommon;
 public class QianZhuiHeArray {
 	public static void main(String[] args) {
 		int[] arr = { 1, 3, 5, 2, 7, 4, 8, 100, 9, 10, -888, 8 };// 准备一个原数组
-		SortCommon.printArr(arr);
+		SortCommonUtil.printArr(arr);
 		
 		// 构造前缀和数组
 		int[] sum = new int[arr.length];
@@ -24,6 +24,6 @@ public class QianZhuiHeArray {
 		for(int i = 1; i < arr.length; i++) {
 			sum[i] = sum[i - 1] + arr[i];
 		}
-		SortCommon.printArr(sum);
+		SortCommonUtil.printArr(sum);
 	}
 }

@@ -6,7 +6,7 @@ package junior.sort;
  * @author zhangzhiwang
  * @date 2022年1月17日 上午11:30:26
  */
-public class SortCommon {
+public class SortCommonUtil {
 	/**
 	 * 判断数组是否需要排序
 	 * 

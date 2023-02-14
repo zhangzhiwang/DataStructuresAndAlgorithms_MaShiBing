@@ -4,7 +4,7 @@ package junior.dailyPractice._20221220;
  * 选择排序
  */
 public class PracticeSelectionSort {
-    private static void selectSort(int[] arr) {
+    public static void selectSort(int[] arr) {
         if(arr == null || arr.length <= 1) {
             return;
         }
